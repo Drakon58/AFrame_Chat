@@ -1,0 +1,193 @@
+<!--Keybindings:
+y to start typing
+enter/return to stop typing
+e to go down
+r to go up-->
+
+<!--Revision notes
+Planned:
+-Player representation with an OBJ head model
+-Movie theater scenery
+    +Video screen
+    +Video play button
+    +video stop button
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page for A-Frame</title>
+    <script src="modules/aframe.min_v0.2.0-rc1.js"></script>
+    <script src="modules/aFrameLine.js"></script>
+    <script src="modules/stats.min.js"></script>
+</head>
+<body >
+
+<a-scene id="scene" >
+
+    <!--assets-->
+    <a-assets>
+        <img id="grass-texture" src="textures/Grass_Texture_Seamless_1.jpg">
+        <img id="theater-carpet-texture" src="textures/theaterCarpetSeamless.jpg">
+        <video id="theater-video"src="Video/Kill Command.mp4"></video>
+        <a-asset-item id="cinema-chair-obj" src="models\CinemaChairs1\492-Cinema.obj"></a-asset-item>
+        <a-asset-item id="cinema-chair-mtl" src="models\CinemaChairs1\492-Cinema.mtl"></a-asset-item>
+        <a-asset-item id="trooper-head-obj" src="models\TrooperHead\st_pos3_head.obj"></a-asset-item>
+        <a-asset-item id="trooper-head-mtl" src="models\TrooperHead\st_pos3_head.mtl"></a-asset-item>
+        <a-asset-item id="projector-obj" src="models\Projector\Projector.obj"></a-asset-item>
+        <a-asset-item id="projector-mtl" src="models\Projector\Projector.mtl"></a-asset-item>
+        <a-asset-item id="table-obj" src="models\Table\Table.obj"></a-asset-item>
+        <a-asset-item id="table-mtl" src="models\Table\Table.mtl"></a-asset-item>
+        <a-asset-item id="tree2-obj" src="models\tree2\tree complicated.obj"></a-asset-item>
+        <a-asset-item id="tree3-obj" src="models\tree3\Tree_Dry_1.obj"></a-asset-item>
+        <a-asset-item id="tree3-mtl" src="models\tree3\Tree_Dry_1.mtl"></a-asset-item>
+        <a-asset-item id="tree4-obj" src="models\tree4\Lowpoly_tree_sample.obj"></a-asset-item>
+        <a-asset-item id="tree4-mtl" src="models\tree4\Lowpoly_tree_sample.mtl"></a-asset-item>
+        <a-asset-item id="popcorn-obj" src="models\Popcorn\Popcorn.obj"></a-asset-item>
+        <a-asset-item id="popcorn-mtl" src="models\Popcorn\Popcorn.mtl"></a-asset-item>
+    </a-assets>
+
+    <!--camera-->
+    <a-entity id ="userBody" position="0 4 -3" rotation="0 0 0">
+        <a-entity id = "actualCam" camera="near:0.2; far:100; fov:80" rotation="0 0 0"  look-controls wasd-controls>
+            <a-entity visible="true"
+                      position="0 0 -0.9"
+                      geometry="primitive: ring; radiusOuter: 0.06; radiusInner: 0.03"
+                      material="color: #FFF; shader: flat; transparent: true; opacity: 1"
+                      scale="1 1 1"
+                      cursor="1000">
+            </a-entity>
+        </a-entity>
+    </a-entity>
+
+    <!--Sky-->
+    <a-sky src="images\equirectangular\Field2.jpg" radius="5000"></a-sky>
+
+    <!--Scene background-->
+    <a-entity id="grassPlane" geometry="primitive: plane; height: 40; width: 40"
+              material="color: #CCCCAA; side:double; src: #theater-carpet-texture ; repeat: 5 5"
+              position="0 -0.501 0"
+              rotation="90 0 0">
+    </a-entity>
+
+    <!--chatbox-->
+    <a-entity chatbox="textInput:testTextInput; textAlignment:left; fontSize: 200"></a-entity>
+
+    <!--Text Canvas-->
+    <a-entity textmonitor="width:1;height:1" position="0 2 0"></a-entity>
+
+    <!--environment entities-->
+    <a-entity id="aFrameSync">
+
+        <!--lighting objects-->
+        <a-entity light="type: ambient; color: #555"></a-entity>
+        <a-entity light="type: directional; color=#555; intensity:0.5" position="0 1 1"></a-entity>
+
+        <!--interactive buttons-->
+        <a-entity id="spawnTreeButton" geometry="primitive: box; height: 1.0; width: 1.0; depth: 1.0"
+                  material="color: #0000F0"
+                  position="0 0 0"
+                    visible="false">
+        </a-entity>
+
+        <!--Static objects-->
+
+        <!--basic custom element-->
+        <!--<a-entity line="color: red; length:10; thickness: 4" rotation="90 0 0"></a-entity>-->
+        <!--<a-entity line="color: blue; length:10; thickness: 4" rotation="0 90 0"></a-entity>-->
+        <!--<a-entity line="color: green; length:10; thickness: 4" rotation="0 0 0"></a-entity>-->
+
+        <!--Theater scene-->
+
+        <!--Walls-->
+            <!--Main-->
+        <a-entity geometry="primitive: box" scale="20 10 1" position="0 9.5 20" material="color:#933"></a-entity>
+        <a-entity geometry="primitive: box" scale="20 10 1" position="0 9.5 -20" material="color:#933"></a-entity>
+        <a-entity geometry="primitive: box" scale="1 10 20" position="20 9.5 0" material="color:#933"></a-entity>
+        <a-entity geometry="primitive: box" scale="1 10 20" position="-20 9.5 0" material="color:#933"></a-entity>
+        <!--ceiling-->
+        <a-entity geometry="primitive: plane; height: 40; width: 40" position="0 19.5 0" rotation="90 0 0" material="color:#433"></a-entity>
+            <!--Projector Room-->
+        <a-entity geometry="primitive: box" scale="10 5 7" position="0 2 -20" material="color:#933"></a-entity>
+        <a-entity geometry="primitive: box" scale="10 2 0.2" position="0 6.5 -13.2" material="color:#933"></a-entity>
+        <a-entity geometry="primitive: box" scale="10 3 0.2" position="0 7 -26.8" material="color:#933"></a-entity>
+        <a-entity geometry="primitive: box" scale="0.2 3 7" position="9.8 7 -20" material="color:#933"></a-entity>
+        <a-entity geometry="primitive: box" scale="0.2 3 7" position="-9.8 7 -20" material="color:#933"></a-entity>
+
+        <!--Screen-->
+
+        <a-video src="#theater-video" position="0 10 18.9" height="10" width="20" rotation="0 180 0"></a-video>
+
+        <!--Seating-->
+        <a-entity position="0 0 -7">
+            <!--Third row seats-->
+            <a-obj-model
+                    src="#cinema-chair-obj"
+                    mtl="#cinema-chair-mtl"
+                    position="0 4 0"
+                    scale="0.05 0.05 0.05"></a-obj-model>
+            <a-entity geometry="primitive: box" scale="5.2 4 1.25" position="0 0 0.9" material="color:#A44"></a-entity>
+            <!--Third row seats-->
+            <a-obj-model
+                    src="#cinema-chair-obj"
+                    mtl="#cinema-chair-mtl"
+                    position="0 2.5 2.5"
+                    scale="0.05 0.05 0.05"></a-obj-model>
+            <a-entity geometry="primitive: box" scale="5.2 2.5 1.25" position="0 0 3.4" material="color:#A44"></a-entity>
+            <!--Second row seats-->
+            <a-obj-model
+                    src="#cinema-chair-obj"
+                    mtl="#cinema-chair-mtl"
+                    position="0 1 5"
+                    scale="0.05 0.05 0.05"></a-obj-model>
+            <a-entity geometry="primitive: box" scale="5.2 1 1.25" position="0 0 5.9" material="color:#A44"></a-entity>
+            <!--First row seats-->
+            <a-obj-model
+                    src="#cinema-chair-obj"
+                    mtl="#cinema-chair-mtl"
+                    position="0 -0.5 7.5"
+                    scale="0.05 0.05 0.05"></a-obj-model>
+        </a-entity>
+
+        <!--Projector Room-->
+        <a-obj-model
+                src="#projector-obj"
+                mtl="#projector-mtl"
+                position="0 9 -17"
+                scale="0.05 0.05 0.05"></a-obj-model>
+        <a-obj-model
+                src="#table-obj"
+                mtl="#table-mtl"
+                position="0 7 -17"
+                scale="0.025 0.025 0.025"></a-obj-model>
+        <!--Test tree-->
+        <a-obj-model
+                src="#tree4-obj"
+                mtl="#tree4-mtl"
+
+                position="0 1 0"
+                scale="0.1 0.1 0.1"></a-obj-model>
+        <!--<a-obj-model-->
+                <!--id="testHelm"-->
+                <!--src="#trooper-head-obj"-->
+                <!--mtl="#trooper-head-mtl"-->
+                <!--position="1 2 3"-->
+                <!--scale="0.075 0.075 0.075"></a-obj-model>-->
+        <!--</a-entity>-->
+</a-scene>
+
+<div id="testTextDiv">ASDF</div>
+<textarea id="testTextDisplay" value="">Test Text for display</textarea>
+<textarea id="testTextInput" value="">Test Text for display</textarea>
+
+//scripts after loading
+<!--<script id="playerModelJS" src="scripts/aFramePlayerModel.js"></script>-->
+<script id="interactionJS" src="scripts/interaction.js"></script>
+<script src="modules/aFrameTextMonitor.js"></script>
+<script src="modules/aFrameChatBoxInput.js"></script>
+<script id="spawningJS" src="scripts/spawnIn.js"></script>
+
+</body>
+
+</html>

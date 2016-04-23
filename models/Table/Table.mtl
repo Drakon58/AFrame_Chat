@@ -1,0 +1,51 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Translucent_Glass_Green_Dark
+Ka 0.000000 0.000000 0.000000
+Kd 0.627451 0.705882 0.678431
+Ks 0.330000 0.330000 0.330000
+d 0.960000
+
+newmtl _1
+Ka 0.000000 0.000000 0.000000
+Kd 0.862745 0.874510 0.890196
+Ks 0.330000 0.330000 0.330000
+map_Kd models/Table/Table/_1.jpg
+
+newmtl _1_1_
+Ka 0.000000 0.000000 0.000000
+Kd 0.956863 0.960784 0.964706
+Ks 0.330000 0.330000 0.330000
+map_Kd models/Table/Table/_1_1_.jpg
+
+newmtl _1_2_
+Ka 0.000000 0.000000 0.000000
+Kd 0.956863 0.960784 0.964706
+Ks 0.330000 0.330000 0.330000
+map_Kd models/Table/Table/_1_2_.jpg
+
+newmtl _1_3_
+Ka 0.000000 0.000000 0.000000
+Kd 0.956863 0.960784 0.964706
+Ks 0.330000 0.330000 0.330000
+map_Kd models/Table/Table/_1_3_.jpg
+
+newmtl FrontColor
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl _1_4_
+Ka 0.000000 0.000000 0.000000
+Kd 0.956863 0.960784 0.964706
+Ks 0.330000 0.330000 0.330000
+map_Kd models/Table/Table/_1_4_.jpg
+
+newmtl _1_5_
+Ka 0.000000 0.000000 0.000000
+Kd 0.956863 0.960784 0.964706
+Ks 0.330000 0.330000 0.330000
+map_Kd models/Table/Table/_1_5_.jpg
+

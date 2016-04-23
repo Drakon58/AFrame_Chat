@@ -1,0 +1,43 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Sketchy_Siding_Scale
+Ka 0.000000 0.000000 0.000000
+Kd 0.949020 0.188235 0.121569
+Ks 0.330000 0.330000 0.330000
+map_Kd Sketchy_Siding_Scale.jpg
+
+newmtl BackColor
+Ka 0.000000 0.000000 0.000000
+Kd 0.670588 0.690196 0.800000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Sketchy_Lines_Wavy_Vertical
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+map_Kd Sketchy_Lines_Wavy_Vertical.jpg
+
+newmtl Color_000
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Sketchy_Lines_Wavy_45_A
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+map_Kd Sketchy_Lines_Wavy_45_A.jpg
+
+newmtl FrontColor
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl drop_result
+Ka 0.000000 0.000000 0.000000
+Kd 0.870588 0.772549 0.396078
+Ks 0.330000 0.330000 0.330000
+map_Kd drop_result.jpg
+
