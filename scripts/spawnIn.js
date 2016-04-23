@@ -2,7 +2,7 @@
  * Created by dhong on 3/11/2016.
  */
 var commands = document.getElementById("testTextInput");
-var syncEntity = document.getElementById("aFrameSync");
+var addEntity = document.getElementById("aFrameAdd");
 var counter = 0;
 var chatMode = false;
 
@@ -72,7 +72,7 @@ function spawnCube(){
     toSpawn.setAttribute('material','color: ' + randHexColor('#'));
     var coordHolder = randWholeRange(3, 10) + ' ' +  randWholeRange(3, 10) + ' ' + randWholeRange(3, 10);
     toSpawn.setAttribute('position', coordHolder);
-    syncEntity.appendChild(toSpawn);
+    addEntity.appendChild(toSpawn);
     console.log('Cube spawned at ' + coordHolder);
 }
 
@@ -82,7 +82,7 @@ function spawnHelm(){
     var coordHolder = randWholeRange(3, 10) + ' ' +  randWholeRange(3, 10) + ' ' + randWholeRange(3, 10);
     toSpawn.setAttribute('position', coordHolder);
     toSpawn.setAttribute('scale', '0.075 0.075 0.075');
-    syncEntity.appendChild(toSpawn);
+    addEntity.appendChild(toSpawn);
     console.log('Helm spawned ' + coordHolder);
 }
 

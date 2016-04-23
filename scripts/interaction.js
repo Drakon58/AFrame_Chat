@@ -23,7 +23,7 @@ var toSpawn;
 
 //holders
 var sceneHolder = document.getElementById('scene');
-var syncHolder = document.getElementById('aFrameSync');
+var addedHolder = document.getElementById('aFrameAdd');
 
 //coords and scale holders
 var coordHolder;
@@ -75,11 +75,11 @@ function spawnDAETree(){
     scaleHolder = treeGirth + ' ' + scaleY + ' ' + treeGirth;
     treeModel.setAttribute('scale',scaleHolder);
     //place tree container
-    syncHolder.appendChild(toSpawn);
+    addedHolder.appendChild(toSpawn);
     //place tree in container
     thisTree = document.getElementById('treeSpawned' + treeCounter);
     thisTree.appendChild(treeModel);
-    //place overall tree into synchronized element
+    //place overall tree into added entities entity
     //Load tree model
     loader.load('models/tree1/tree1.dae',function( collada){
         box.setFromObject(collada.scene);

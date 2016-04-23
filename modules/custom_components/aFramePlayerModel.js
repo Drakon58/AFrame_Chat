@@ -10,8 +10,7 @@ function PlayerHead(){
 
 var playerHeadInstances  = [];
 var numPlayers = 0;
-//var playerInstance = document.createElement("a-entity");
-//document.getElementById("aFrameSync").appendChild(playerInstance);
+
 
 
 AFRAME.registerComponent('player-model', {
