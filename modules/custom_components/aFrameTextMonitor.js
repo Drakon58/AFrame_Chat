@@ -2,26 +2,10 @@
  * Created by Daniel Thuan Hong on 2016-01-29.
  */
 
-function TextMonitor(ctx, canvas){
-    this.texture = texture;
-    this.ctx = ctx;
-    this.canvas = canvas;
-    this.plane = plane;
-    this.material = material;
-};
-
 //Text monitor instance array
 var monitorArray = [];
 
-var texture;
-var ctx;
-var canvas;
-var plane;
-var material;
-var textSource;
 var instanceNum=-1;
-var textAlignment;
-var fontSize;
 
 AFRAME.registerComponent('textmonitor', {
     dependencies: ['material'],
@@ -36,67 +20,63 @@ AFRAME.registerComponent('textmonitor', {
         fontSize: {default: 40}
     },
     init: function(){
-
         instanceNum++;
-        canvas = document.createElement('canvas');
-        canvas.id = "textMonitorCanvas" + instanceNum;
-        document.body.insertBefore(canvas, document.body.firstChild);
-        ctx = canvas.getContext('2d');
-        ctx.canvas.width = 2048;
-        ctx.canvas.height= 512;
+        this.canvas = document.createElement('canvas');
+        this.canvas.id = "textMonitorCanvas" + instanceNum;
+        document.body.insertBefore(this.canvas, document.body.firstChild);
+        this.ctx = this.canvas.getContext('2d');
+        this.ctx.canvas.width = 2048;
+        this.ctx.canvas.height= 512;
         //text settings
-        textAlignment = this.data.textAlignment;
-        fontSize = this.data.fontSize;
-        ctx.textAlign = textAlignment;
-        ctx.font = fontSize + 'pt Arial';
-        texture = new THREE.Texture(canvas);
-        monitorArray.push(new TextMonitor(ctx, canvas, this.data.textAlignment, this.data.fontSize, this.data.textInput));
+        this.textAlignment = this.data.textAlignment;
+        this.fontSize = this.data.fontSize;
+        this.ctx.textAlign = this.textAlignment;
+        this.ctx.font = this.fontSize + 'pt Arial';
+        this.texture = new THREE.Texture(this.canvas);
         console.log("Number of textMonitor instances: " + instanceNum);
-        console.log("Font size for this monitor: " + fontSize);
+        console.log("Font size for this monitor: " + this.fontSize);
     },
     update: function(){
 
-        texture = new THREE.Texture(canvas);
-        material = new THREE.MeshBasicMaterial({
+        this.texture = new THREE.Texture(this.canvas);
+        this.material = new THREE.MeshBasicMaterial({
             color: this.data.color,
             side: THREE.DoubleSide,
-            map: texture,
+            map: this.texture,
             opacity: "0.8",
             transparent:true
         });
 
         var geometry = new THREE.PlaneGeometry(this.data.width, this.data.height,
-            this.data.widthSegments,this.data.lengthSegments);
-        plane = new THREE.Mesh(geometry, material);
-        this.el.object3D.add(plane);
+            this.data.widthSegments,this.data.heightSegments);
+        this.plane = new THREE.Mesh(geometry, this.material);
+        this.el.object3D.add(this.plane);
 
 
     },
     tick: function(){
         if(this.data.textInput == 'default1234'){
-            textSource = new Date().getTime();
+            this.textSource = new Date().getTime();
         }
         else{
-            textSource = document.getElementById(this.data.textInput.toString());
-            if(textSource.nodeName == "TEXTAREA"){
-                textSource = document.getElementById(this.data.textInput.toString()).value;
+            this.textSource = document.getElementById(this.data.textInput.toString());
+            if(this.textSource.nodeName == "TEXTAREA"){
+                this.textSource = document.getElementById(this.data.textInput.toString()).value;
             }
             else{
-                textSource = document.getElementById(this.data.textInput.toString()).innerHTML;
+                this.textSource = document.getElementById(this.data.textInput.toString()).innerHTML;
             }
         }
-        changeCanvas();
-        plane.material.map.image = canvas;
-        plane.material.map.needsUpdate = true;
+
+        this.ctx.fillStyle = "rgba(0,0,0,1)";
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+        this.ctx.fillStyle = "rgba(255,255,255,1)";
+        this.ctx.fillRect(10, 10, this.canvas.width - 20, this.canvas.height - 20);
+        this.ctx.fillStyle = "rgba(0,0,0,1)";
+        this.ctx.textBaseline = "middle";
+        this.ctx.fillText(this.textSource, 25, this.canvas.height / 2);
+
+        this.plane.material.map.image = this.canvas;
+        this.plane.material.map.needsUpdate = true;
     }
 });
-
-function changeCanvas() {
-    ctx.fillStyle = "rgba(0,0,0,1)";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "rgba(255,255,255,1)";
-    ctx.fillRect(10, 10, canvas.width - 20, canvas.height - 20);
-    ctx.fillStyle = "rgba(0,0,0,1)";
-    ctx.textBaseline = "middle";
-    ctx.fillText(textSource, 25, canvas.height / 2);
-}
