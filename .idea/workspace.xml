@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6c35b42-2080-4739-b90d-0c8adc026458" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/UI/ChatBG_V0_Draft0_BG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/UI/ChatBG_V0_Draft0_TagBG.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/custom_components/aFrameChatBoxInput.js" afterPath="$PROJECT_DIR$/modules/custom_components/aFrameChatBoxInput.js" />
@@ -28,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="interaction.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="interaction.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/interaction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="28.965517">
-              <caret line="32" column="6" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.34729317">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -50,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17943338">
-              <caret line="151" column="29" selection-start-line="151" selection-start-column="29" selection-end-line="151" selection-end-column="29" />
+            <state vertical-scroll-proportion="-11.145454">
+              <caret line="181" column="26" selection-start-line="181" selection-start-column="26" selection-end-line="181" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -63,8 +65,8 @@
       <file leaf-file-name="aFrameChatBoxInput.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/custom_components/aFrameChatBoxInput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7586207">
-              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+            <state vertical-scroll-proportion="-17.0">
+              <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -73,8 +75,8 @@
       <file leaf-file-name="aFrameTextMonitor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/custom_components/aFrameTextMonitor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1724138">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="-22.275862">
+              <caret line="104" column="38" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -122,9 +124,9 @@
         <option value="$PROJECT_DIR$/modules/custom_components/aFramePlayerModel.js" />
         <option value="$PROJECT_DIR$/scripts/interaction.js" />
         <option value="$PROJECT_DIR$/scripts/spawnIn.js" />
-        <option value="$PROJECT_DIR$/modules/custom_components/aFrameChatBoxInput.js" />
-        <option value="$PROJECT_DIR$/modules/custom_components/aFrameTextMonitor.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/modules/custom_components/aFrameTextMonitor.js" />
+        <option value="$PROJECT_DIR$/modules/custom_components/aFrameChatBoxInput.js" />
       </list>
     </option>
   </component>
@@ -191,6 +193,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AFrame_Initial_Layout_R7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AFrame_Initial_Layout_R7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AFrame_Initial_Layout_R7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="textures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AFrame_Initial_Layout_R7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AFrame_Initial_Layout_R7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="textures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -807,7 +841,7 @@
       <workItem from="1458084155033" duration="8012000" />
       <workItem from="1458339035782" duration="23235000" />
       <workItem from="1461447991919" duration="630000" />
-      <workItem from="1461448787222" duration="8137000" />
+      <workItem from="1461448787222" duration="24550000" />
     </task>
     <task id="LOCAL-00001" summary="Moved custom components to a separate folder">
       <created>1461449592815</created>
@@ -833,11 +867,17 @@
       <option name="project" value="LOCAL" />
       <updated>1461597823540</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Experimented with some code in the textmonitor componenet&#10;&#10;For some reason the textmonitor component currently only work in firefox. In chrome it fails to add a canvas when an entity using chatbox or textmonitor is added.">
+      <created>1461599513138</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1461599513138</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245284000" />
+    <option name="totallyTimeSpent" value="261697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1058" y="-298" width="1066" height="1656" extended-state="6" />
@@ -886,7 +926,8 @@
     <MESSAGE value="Moved custom components to a separate folder" />
     <MESSAGE value="Changed some variable names" />
     <MESSAGE value="Fixed text screen component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed text screen component" />
+    <MESSAGE value="Experimented with some code in the textmonitor componenet&#10;&#10;For some reason the textmonitor component currently only work in firefox. In chrome it fails to add a canvas when an entity using chatbox or textmonitor is added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Experimented with some code in the textmonitor componenet&#10;&#10;For some reason the textmonitor component currently only work in firefox. In chrome it fails to add a canvas when an entity using chatbox or textmonitor is added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -899,14 +940,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/interaction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/spawnIn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1261,34 +1294,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/interaction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="28.965517">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="6" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/textures/UI/ChatBG_V0_Draft0_BG.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/custom_components/aFrameTextMonitor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1724138">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="-22.275862">
+          <caret line="104" column="38" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/custom_components/aFrameChatBoxInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7586207">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17943338">
-          <caret line="151" column="29" selection-start-line="151" selection-start-column="29" selection-end-line="151" selection-end-column="29" />
+        <state vertical-scroll-proportion="-11.145454">
+          <caret line="181" column="26" selection-start-line="181" selection-start-column="26" selection-end-line="181" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/interaction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34729317">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding />
         </state>
       </provider>
