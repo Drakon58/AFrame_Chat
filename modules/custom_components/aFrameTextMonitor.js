@@ -3,7 +3,6 @@
  */
 
 //Text monitor instance array
-var monitorArray = [];
 
 var instanceNum=-1;
 
@@ -51,8 +50,6 @@ AFRAME.registerComponent('textmonitor', {
             this.data.widthSegments,this.data.heightSegments);
         this.plane = new THREE.Mesh(geometry, this.material);
         this.el.object3D.add(this.plane);
-
-
     },
     tick: function(){
         if(this.data.textInput == 'default1234'){

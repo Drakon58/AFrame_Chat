@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e6c35b42-2080-4739-b90d-0c8adc026458" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/custom_components/aFrameChatBoxInput.js" afterPath="$PROJECT_DIR$/modules/custom_components/aFrameChatBoxInput.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/custom_components/aFrameTextMonitor.js" afterPath="$PROJECT_DIR$/modules/custom_components/aFrameTextMonitor.js" />
     </list>
@@ -27,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="interaction.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="interaction.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/interaction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.068895645">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state vertical-scroll-proportion="28.965517">
+              <caret line="32" column="6" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -40,8 +41,8 @@
       <file leaf-file-name="spawnIn.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/spawnIn.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3448277">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="19" />
+            <state vertical-scroll-proportion="-13.827586">
+              <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -49,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.890909">
-              <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.17943338">
+              <caret line="151" column="29" selection-start-line="151" selection-start-column="29" selection-end-line="151" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -62,11 +63,9 @@
       <file leaf-file-name="aFrameChatBoxInput.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/custom_components/aFrameChatBoxInput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.310345">
-              <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#40#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-1.7586207">
+              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,8 +73,8 @@
       <file leaf-file-name="aFrameTextMonitor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/custom_components/aFrameTextMonitor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0">
-              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+            <state vertical-scroll-proportion="-1.1724138">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,9 +122,9 @@
         <option value="$PROJECT_DIR$/modules/custom_components/aFramePlayerModel.js" />
         <option value="$PROJECT_DIR$/scripts/interaction.js" />
         <option value="$PROJECT_DIR$/scripts/spawnIn.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/modules/custom_components/aFrameChatBoxInput.js" />
         <option value="$PROJECT_DIR$/modules/custom_components/aFrameTextMonitor.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -808,7 +807,7 @@
       <workItem from="1458084155033" duration="8012000" />
       <workItem from="1458339035782" duration="23235000" />
       <workItem from="1461447991919" duration="630000" />
-      <workItem from="1461448787222" duration="6562000" />
+      <workItem from="1461448787222" duration="8137000" />
     </task>
     <task id="LOCAL-00001" summary="Moved custom components to a separate folder">
       <created>1461449592815</created>
@@ -828,11 +827,17 @@
       <option name="project" value="LOCAL" />
       <updated>1461453305361</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed text screen component">
+      <created>1461597823540</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1461597823540</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243709000" />
+    <option name="totallyTimeSpent" value="245284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1058" y="-298" width="1066" height="1656" extended-state="6" />
@@ -840,11 +845,11 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32470894" sideWeight="0.4961905" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32470894" sideWeight="0.4961905" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32470894" sideWeight="0.5038095" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32988358" sideWeight="0.5038095" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295238" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32988358" sideWeight="0.4961905" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -880,7 +885,8 @@
     </ignored-roots>
     <MESSAGE value="Moved custom components to a separate folder" />
     <MESSAGE value="Changed some variable names" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed some variable names" />
+    <MESSAGE value="Fixed text screen component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed text screen component" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -922,9 +928,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1247,46 +1251,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.890909">
-          <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/spawnIn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3448277">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="19" />
+        <state vertical-scroll-proportion="-13.827586">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/custom_components/aFrameChatBoxInput.js">
+    <entry file="file://$PROJECT_DIR$/scripts/interaction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.310345">
-          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="28.965517">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/custom_components/aFrameTextMonitor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        <state vertical-scroll-proportion="-1.1724138">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/interaction.js">
+    <entry file="file://$PROJECT_DIR$/modules/custom_components/aFrameChatBoxInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.068895645">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state vertical-scroll-proportion="-1.7586207">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17943338">
+          <caret line="151" column="29" selection-start-line="151" selection-start-column="29" selection-end-line="151" selection-end-column="29" />
           <folding />
         </state>
       </provider>

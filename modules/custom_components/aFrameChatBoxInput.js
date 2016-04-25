@@ -23,7 +23,6 @@ AFRAME.registerComponent('chatbox', {
         this.chatBox.setAttribute("rotation" , "0 -30 0");
         this.chatBox.setAttribute("position" , (this.data.width/2 + 0.7) + " " + -(this.data.height * 1.2) + " -0.8");
         document.getElementById('actualCam').appendChild(this.chatBox);
-
     }
 });
 
